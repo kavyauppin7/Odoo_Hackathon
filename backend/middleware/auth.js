@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'ecofinds_jwt_secret_2025';  // Replace with secure key in production
+const JWT_SECRET = process.env.JWT_SECRET || 'ecofinds_jwt_secret_2025';  
 
 const authenticateToken = async (req, res, next) => {
   const authHeader = req.headers['authorization'];
