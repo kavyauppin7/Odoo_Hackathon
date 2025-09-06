@@ -14,10 +14,9 @@ const PORT = 3000;
 
 app.use(express.json());
 app.use(cors());
-// Serve static files from the uploads directory
+
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Route setup
 app.use('/api/auth', authRoutes);
 app.use('/api/marketplace', productRoutes);
 app.use('/api/my-orders', orderRoutes);
