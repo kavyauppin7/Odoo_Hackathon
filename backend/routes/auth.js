@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const pool = require('../config/db');
 
 const router = express.Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'ecofinds_jwt_secret_2025';  // Replace with secure key in production
+const JWT_SECRET = process.env.JWT_SECRET || 'ecofinds_jwt_secret_2025';  
 
 router.post('/signup', async (req, res) => {
   const { displayName, email, password, confirmPassword } = req.body;
